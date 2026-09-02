@@ -2,6 +2,6 @@ package org.example;
 
 public enum Puesto {
     ADMINISTRATIVO,
-    TÉCNICO,
+    TECNICO,
     GERENTE
 }

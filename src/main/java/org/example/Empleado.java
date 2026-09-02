@@ -13,6 +13,7 @@ public class Empleado extends Persona {
         this.puesto = puesto;
         this.fechaIngreso = fechaIngreso;
         this.departamento = departamento;
+
     }
 
     public int getSalario(){
@@ -27,12 +28,13 @@ public class Empleado extends Persona {
     public void setPuesto(Puesto puesto){
         this.puesto = puesto;
     }
-
-    public Departamento getDepartamento() {
+    public Departamento getDepartamento(){
         return departamento;
     }
-
-    public void setDepartamento(Departamento departamento) {
+    public void setDepartamento(Departamento departamento){
         this.departamento = departamento;
+    }
+    public String getFechaIngreso(){
+        return fechaIngreso;
     }
 }

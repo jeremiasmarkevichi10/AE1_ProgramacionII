@@ -34,16 +34,16 @@ public class Departamento {
     public List<Empleado> getListaEmpleados(){
         return listaEmpleados;
     }
-    public void setAgregarEmpleado(Empleado NuevoEmpleado){
+    public void agregarEmpleado(Empleado NuevoEmpleado){
         listaEmpleados.add(NuevoEmpleado);
     }
-    public void setQuitarEmpleado(Empleado DespedirEmpleado){
+    public void quitarEmpleado(Empleado DespedirEmpleado){
         listaEmpleados.remove(DespedirEmpleado);
     }
-@Override
+    @Override
     public String toString(){
-        return String.format("Departamento: %d | Nombre: %d | Presupuesto: %d | Responsable: %d",
-               nombre, presupuesto, responsable.getNombre() );
-}
+        return String.format("Departamento: %s | Presupuesto: %d | Responsable: %s",
+                nombre, presupuesto, responsable.getNombre());
+    }
 
 }
